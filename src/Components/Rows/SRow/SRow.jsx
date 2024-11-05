@@ -42,15 +42,15 @@ function SRow({ title, fetchUrl, isLargeRow }) {
         <div className="row_posters">
           {movies.map((movie) => (
             <img
+              key={movie.id} // Use the unique movie id or another unique identifier here
               onClick={() => handleClick(movie)}
               className={`row_poster ${isLargeRow && "row__posterLarge"}`}
-              src={`${baseURL}${
-                isLargeRow ? movie.poster_path : movie.backdrop_path
-              }`}
+              src={`${baseURL}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
               alt={movie.name}
             />
           ))}
         </div>
+
         <div style={{ padding: "40px" }}>
           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
         </div>
