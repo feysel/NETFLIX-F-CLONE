@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import NetflixLogo from "../../../src/assets/Images/Netflix_blacklogo";
+import NetflixLogo from "../../assets/Images/NetflixBlackLogo.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationAddIcon from "@mui/icons-material/NotificationAdd";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
